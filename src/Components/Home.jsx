@@ -11,7 +11,6 @@ const Home = () => {
 
     updateBackground(); 
 
-   
     let resizeTimer;
     const handleResize = () => {
       clearTimeout(resizeTimer);
@@ -30,24 +29,32 @@ const Home = () => {
         style={{ 
           backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",  
-          backgroundPosition: "center", 
-          maxWidth: "max-w-screen"
+          backgroundPosition: "center",
         }}
       >
-        <div className="lg:ml-20 flex flex-col items-start lg:items-center justify-center px-5">
-          <h1 className="font-semibold text-white text-2xl sm:text-2xl lg:text-6xl lg:p-5 text-center lg:text-left">
+        <div className="lg:ml-20 flex flex-col items-center lg:items-start justify-center px-5 text-center lg:text-left">
+          <h1 className="font-semibold text-white text-3xl sm:text-4xl lg:text-6xl lg:p-5">
             Elevate Your Inner
             <br />
-            <span className="text-4xl sm:text-4xl lg:text-8xl text-red-700">Foodie </span>
+            <span className="text-4xl sm:text-5xl lg:text-8xl text-red-700">Foodie </span>
             <br />
             with Every Bite.
           </h1>
-          <button
-            className="cursor-pointer rounded-md border-2 bg-red-800 px-4 py-2 text-white font-semibold mt-5 
-            hover:bg-green-800 hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105"
-          >
-            Menu
-          </button>
+          <div className='flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 mt-5'>
+            <a href='#Contact'
+              className="rounded-md border-2 bg-red-800 px-6 py-3 text-white font-semibold 
+              hover:bg-green-800 hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105">
+              Book or Order
+            </a>
+            <div className="flex gap-4">
+              <a href="https://www.facebook.com">
+                <img src={assets.facebook} className='w-8 h-8 hover:scale-110 transition' alt="Facebook" />
+              </a>
+              <a href="#https://www.instagram.com">
+                <img src={assets.instagram} className='w-8 h-8 hover:scale-110 transition' />
+              </a>  
+            </div>
+          </div>
         </div>
       </div>
     </section>

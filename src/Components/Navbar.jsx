@@ -22,17 +22,17 @@ const Navbar = () => {
           relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full">About us</Link>
 
           <Link to='Dishes' spy={true} smooth={true} duration={500} className="text-green-900 hover:text-red-800 transition-all cursor-pointer
-          relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full">Dishes</Link>
+          relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full">Menu</Link>
 
           <Link to='Review' spy={true} smooth={true} duration={500} className="text-green-900 hover:text-red-800 transition-all cursor-pointer
           relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-red-800 after:transition-all after:duration-300 hover:after:w-full">Reviews</Link>
 
-          <Link to='Contact' spy={true} smooth={true} duration={500}>
+          {/* <Link to='Contact' spy={true} smooth={true} duration={500}>
             <button className='cursor-pointer rounded-md border-2 border-red-800 px-4 py-2 text-red-700 font-semibold 
             hover:bg-green-800 hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105'>
               Contact
             </button>
-          </Link>
+          </Link> */}
         </nav>
 
         {/* Hamburger Menu */}
@@ -52,14 +52,14 @@ const Navbar = () => {
           </button>
           <Link to='Home' spy={true} smooth={true} duration={500} className="text-green-900 text-lg" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to='About' spy={true} smooth={true} duration={500} className="text-green-900 text-lg" onClick={() => setMenuOpen(false)}>About us</Link>
-          <Link to='Dishes' spy={true} smooth={true} duration={500} className="text-green-900 text-lg" onClick={() => setMenuOpen(false)}>Dishes</Link>
+          <Link to='Dishes' spy={true} smooth={true} duration={500} className="text-green-900 text-lg" onClick={() => setMenuOpen(false)}>Menu</Link>
           <Link to='Review' spy={true} smooth={true} duration={500} className="text-green-900 text-lg" onClick={() => setMenuOpen(false)}>Reviews</Link>
-          <Link to='Contact' spy={true} smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
+          {/* <Link to='Contact' spy={true} smooth={true} duration={500} onClick={() => setMenuOpen(false)}>
             <button className='cursor-pointer rounded-md border-2 border-red-800 px-4 py-2 text-red-700 font-semibold 
             hover:bg-green-800 hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105'>
               Contact
             </button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

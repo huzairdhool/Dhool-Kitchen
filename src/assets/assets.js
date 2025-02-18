@@ -4,6 +4,11 @@ import close from './close.png'
 import hero from './hero.jpg'
 import shero from './shero.jpg'
 import karhayi from './karhayi.png'
+import facebook from './facebook.png'
+import fast from './fast.png'
+import desi from './desi.png'
+import drinks from './drinks.png'
+import instagram from './instagram.png'
 
 
 export const assets = {
@@ -13,6 +18,11 @@ export const assets = {
     hero,
     shero,
     karhayi,
+    instagram,
+    facebook,
+    desi,
+    fast,
+    drinks,
 
 }
 
