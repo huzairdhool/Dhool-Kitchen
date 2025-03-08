@@ -5,6 +5,7 @@ import About from './Components/About'
 import Dishes from './Components/Dishes'
 import Reviews from './Components/Reviews'
 import Contact from './Components/Contact'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
     <Dishes/>
     <Reviews/>
     <Contact/>
+    <Footer/>
     </>
   )
 }

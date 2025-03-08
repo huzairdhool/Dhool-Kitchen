@@ -9,6 +9,9 @@ import fast from './fast.png'
 import desi from './desi.png'
 import drinks from './drinks.png'
 import instagram from './instagram.png'
+import img1 from './img1.png'
+import img2 from './img2.png'
+import img3 from './img3.png'
 
 
 export const assets = {
@@ -23,7 +26,9 @@ export const assets = {
     desi,
     fast,
     drinks,
-
+    img1,
+    img2,
+    img3,
 }
 
 // export const projectsData = [
